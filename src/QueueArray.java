@@ -67,21 +67,43 @@ public class QueueArray<Item> implements Iterable<Item>, Queue<Item>{
     }
 
     public Iterator<Item> iterator() {
+        /**
+         * Returns an iterator that traverses the queue from head to tail.
+         * The iterator reflects the state of the queue at the time it is created;
+         * modifications to the queue after the iterator is created may produce
+         * unpredictable results.
+         *
+         * @return a head-to-tail Iterator over the elements of type Item
+         */
         return (new Iterator<Item>() {
 
             private int pos = head;
             private int count = 0;
 
+            /**
+             * Returns true if the iteration has more elements.
+             * In other words, returns true if a subsequent call to next()
+             * would return an element rather than throwing an exception.
+             *
+             * @return true if there are more elements to iterate over, false otherwise
+             */
             public boolean hasNext() {
-                return (count < size);
+                //TODO Implement the hasNext() method
+                return true;
             }
 
+            /**
+             * Returns the next element in the iteration, advancing the iterator
+             * one position toward the tail of the queue.
+             *
+             * @return the next Item in head-to-tail order
+             * @throws java.util.NoSuchElementException if the iteration has no more elements
+             */
             public Item next() {
-                Item item = items[pos++];
-                if (pos == items.length)
-                    pos = 0;
-                count++;
+                //TODO Implement the next() method
+                Item item = items[0];
                 return item;
+
             }
         });
     }

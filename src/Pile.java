@@ -9,7 +9,7 @@ public class Pile extends QueueArray<Card> {
         // Example:
         //   Pile pile = new Pile("As 2s 3s Jh Qh Kh 4d 5d 6d 7c 8c 9c");
 
-        // TODO: implement pile constructor 
+        // TODO: implement pile constructor
     }
 
     public String toString() {
@@ -17,15 +17,15 @@ public class Pile extends QueueArray<Card> {
         // Creates a string containing 10 cards per line, for as many lines
         // as necessary to show all cards in the pile
         //
-        // Example: 
-        //   6h  3h  Jc  Ts  3c  7h  2h  9c  3s  7s  
-        //   8c  5d  Js  Jh  6d  Ah  Qh  9d  Ks  6c  
+        // Example:
+        //   6h  3h  Jc  Ts  3c  7h  2h  9c  3s  7s
+        //   8c  5d  Js  Jh  6d  Ah  Qh  9d  Ks  6c
         //   Kc  Td  Jc  Th  9s  Kd
-        // TODO: implement toString
+        // TODO: implement toString. Use a  'for (Card card : this) {}' loop to print them
         String output = "";
-        
+
         return output;
-        
+
     }
 
     /*
